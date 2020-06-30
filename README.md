@@ -1,5 +1,5 @@
 # IntellST - Scanner thermique intelligent IntellST 
-Installation Project
+**Installation Project**
 
   1.  Checkout
   2.  `cd docker`
