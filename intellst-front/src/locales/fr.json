@@ -1,0 +1,88 @@
+{
+  "menu": {
+    "home": "Page d'accueil",
+    "cases": "Cas identifiés",
+    "settings": "Paramètres",
+    "faq": "QFP"
+  },
+  "home": {
+    "graph1": "Nombre d'entrées par jour",
+    "graph2": "Nombre de personnes détectées",
+    "graph3": "Nombre de retours de personnes interdites",
+    "graph4": "Nombre de personnes souffrant de fièvre"
+  },
+  "cases": {
+    "title": "Cas identifiés",
+    "older": "Plus anciennes",
+    "popup": {
+      "title": "Informations sur la personne",
+      "temperature": "Température",
+      "date": "Première fièvre détectée",
+      "return": "Tentative de retour",
+      "instructions": "Voir instructions",
+      "allow": "Autoriser l'entrée"
+    }
+  },
+  "login": {
+    "title": "Connexion",
+    "entry": "Entrer"
+  },
+  "settings": {
+    "allowed": "Régler la température maximale autorisée C°",
+    "restriction": "Définir la période de restriction (jours)",
+    "save": "Sauver"
+  },
+  "notifications": {
+    "new": "Nouvelles notifications",
+    "old": "Notifications plus anciennes",
+    "head": "Attention:",
+    "body1": "nouvelle tentative de retour",
+    "body2": "nouveau cas identifié",
+    "link": "Voir le cas"
+  },
+  "faq": {
+    "title1": "Questions fréquemment posées",
+    "items": [
+      {
+        "title": "Qu'est-ce qu'un coronavirus ?",
+        "text": "Les coronavirus sont une grande famille de virus qui peuvent provoquer des maladies chez les animaux ou les humains. Chez l'homme, plusieurs coronavirus sont connus pour provoquer des infections respiratoires allant du rhume à des maladies plus graves telles que le syndrome respiratoire du Moyen-Orient (MERS) et le syndrome respiratoire aigu sévère (SRAS). Le coronavirus le plus récemment découvert provoque la maladie à coronavirus COVID-19."
+      },
+      {
+        "title": "Qu'est-ce que COVID-19 ?",
+        "text": "COVID-19 est la maladie infectieuse causée par le coronavirus le plus récemment découvert. Ce nouveau virus et cette nouvelle maladie étaient inconnus avant le début de l'épidémie à Wuhan, en Chine, en décembre 2019. COVID-19 est maintenant une pandémie affectant de nombreux pays dans le monde."
+      },
+      {
+        "title": "Quels sont les symptômes de COVID-19 ?",
+        "text": "Les symptômes les plus courants de COVID-19 sont la fièvre, la toux sèche et la fatigue. D'autres symptômes, moins courants et pouvant affecter certains patients, comprennent des douleurs et des douleurs, une congestion nasale, des maux de tête, une conjonctivite, un mal de gorge, une diarrhée, une perte de goût ou d'odeur ou une éruption cutanée ou une décoloration des doigts ou des orteils. Ces symptômes sont généralement légers et commencent progressivement. Certaines personnes sont infectées mais ne présentent que des symptômes très légers. La plupart des gens (environ 80%) se remettent de la maladie sans avoir besoin de soins hospitaliers. Environ 1 personne sur 5 qui reçoit COVID-19 tombe gravement malade et éprouve des difficultés à respirer. Les personnes âgées et celles qui ont des problèmes médicaux sous-jacents comme l'hypertension artérielle, des problèmes cardiaques et pulmonaires, le diabète ou le cancer sont plus à risque de développer une maladie grave. Cependant, n'importe qui peut attraper COVID-19 et tomber gravement malade. Les personnes de tous âges qui souffrent de fièvre et / ou de toux associées à des difficultés respiratoires / essoufflement, douleur / pression thoracique, ou perte de la parole ou des mouvements doivent consulter immédiatement un médecin. Si possible, il est recommandé d'appeler d'abord le fournisseur de soins de santé ou l'établissement, afin que le patient puisse être dirigé vers la bonne clinique."
+      },
+      {
+        "title": "Que dois-je faire si j'ai des symptômes de COVID-19 et quand dois-je consulter un médecin ?",
+        "text": "Si vous présentez des symptômes mineurs, tels qu'une toux légère ou une fièvre légère, il n'est généralement pas nécessaire de consulter un médecin. Restez à la maison, isolez-vous et surveillez vos symptômes. Suivez les directives nationales sur l'auto-isolement. Cependant, si vous vivez dans une région touchée par le paludisme ou la dengue, il est important de ne pas ignorer les symptômes de la fièvre. Cherchez de l'aide médicale. Lorsque vous vous rendez dans l'établissement de santé, portez un masque si possible, gardez une distance d'au moins 1 mètre avec les autres personnes et ne touchez pas les surfaces avec vos mains. S'il s'agit d'un enfant malade, aidez-le à suivre ce conseil. Cherchez des soins médicaux immédiats si vous avez des difficultés à respirer ou une douleur / pression dans la poitrine. Si possible, appelez votre fournisseur de soins de santé à l'avance, afin qu'il / elle puisse vous diriger vers le bon établissement de santé."
+      },
+      {
+        "title": "Comment COVID-19 se propage-t-il ?",
+        "text": "Les gens peuvent attraper COVID-19 par d'autres personnes atteintes du virus. La maladie se propage principalement d'une personne à l'autre par de petites gouttelettes provenant du nez ou de la bouche, qui sont expulsées lorsqu'une personne atteinte de COVID-19 tousse, éternue ou parle. Ces gouttelettes sont relativement lourdes, ne voyagent pas loin et s'enfoncent rapidement au sol. Les gens peuvent attraper COVID-19 s'ils respirent ces gouttelettes d'une personne infectée par le virus. C'est pourquoi il est important de rester à au moins 1 mètre) des autres. Ces gouttelettes peuvent atterrir sur des objets et des surfaces autour de la personne tels que des tables, des poignées de porte et des mains courantes. Les personnes peuvent être infectées en touchant ces objets ou surfaces, puis en touchant leurs yeux, leur nez ou leur bouche. C'est pourquoi il est important de se laver les mains régulièrement avec de l'eau et du savon ou de nettoyer avec un désinfectant pour les mains à base d'alcool. L'OMS évalue les recherches en cours sur les modes de propagation du COVID-19 et continuera de partager les résultats mis à jour.   "
+      },
+      {
+        "title": "COVID-19 peut-il être attrapé par une personne qui ne présente aucun symptôme ?",
+        "text": "COVID-19 se propage principalement par des gouttelettes respiratoires expulsées par une personne qui tousse ou présente d'autres symptômes tels que de la fièvre ou de la fatigue. De nombreuses personnes atteintes de COVID-19 ne présentent que des symptômes bénins. Cela est particulièrement vrai dans les premiers stades de la maladie. Il est possible d'attraper COVID-19 d'une personne qui vient de tousser légèrement et qui ne se sent pas mal. Certains rapports ont indiqué que les personnes sans symptômes peuvent transmettre le virus. On ne sait pas encore à quelle fréquence cela se produit. L'OMS évalue les recherches en cours sur le sujet et continuera de partager les résultats mis à jour."
+      },
+      {
+        "title": "Comment pouvons-nous protéger les autres et nous-mêmes si nous ne savons pas qui est infecté ?",
+        "text": "Pratiquer l'hygiène des mains et des voies respiratoires est important en tout temps et constitue le meilleur moyen de protéger les autres et vous-même . Dans la mesure du possible, maintenez une distance d'au moins 1 mètre entre vous et les autres. Ceci est particulièrement important si vous vous tenez près de quelqu'un qui tousse ou éternue. Étant donné que certaines personnes infectées peuvent ne pas présenter de symptômes ou que leurs symptômes peuvent être légers, le maintien d'une distance physique avec tout le monde est une bonne idée si vous vous trouvez dans une zone où COVID-19 circule. "
+      },
+      {
+        "title": "Que dois-je faire si je suis entré en contact étroit avec une personne atteinte de COVID-19 ?",
+        "text": " Si vous avez été en contact étroit avec une personne atteinte de COVID-19, vous pouvez être infecté. Un contact étroit signifie que vous vivez avec ou avez vécu à moins d'un mètre de ceux qui ont la maladie. Dans ces cas, il est préférable de rester à la maison. Cependant, si vous vivez dans une région touchée par le paludisme ou la dengue, il est important de ne pas ignorer les symptômes de la fièvre. Cherchez de l'aide médicale. Lorsque vous vous rendez dans l'établissement de santé, portez un masque si possible, éloignez-vous d'au moins 1 mètre des autres personnes et ne touchez pas les surfaces avec vos mains. S'il s'agit d'un enfant malade, aidez-le à suivre ce conseil. Si vous ne vivez pas dans une région touchée par le paludisme ou la dengue, procédez comme suit: Si vous tombez malade, même avec des symptômes très légers, vous devez vous isoler Même si vous ne pensez pas avoir été exposé au COVID-19 mais développez des symptômes, alors auto-isolez-vous et surveillez-vous Vous êtes plus susceptible d'infecter d'autres personnes aux premiers stades de la maladie lorsque vous ne présentez que des symptômes bénins, donc l'auto-isolement précoce est très important. Si vous ne présentez pas de symptômes mais avez été exposé à une personne infectée, mettez-vous en quarantaine pendant 14 jours. Si vous avez définitivement eu l'auto-isolement de COVID-19 (confirmé par un test) pendant 14 jours même après la disparition des symptômes par mesure de précaution - on ne sait pas encore exactement combien de temps les personnes restent infectieuses après leur rétablissement. Suivez les conseils nationaux sur l'auto-isolement."
+			},
+			{
+        "title": "Que signifie s'isoler ?",
+        "text": "L'auto-isolement est une mesure importante prise par ceux qui ont des symptômes de COVID-19 pour éviter d'infecter les autres dans la communauté, y compris les membres de la famille. L'auto-isolement est lorsqu'une personne qui éprouve de la fièvre, de la toux ou d'autres symptômes de COVID-19 reste à la maison et ne va pas au travail, à l'école ou dans des lieux publics. Cela peut être volontaire ou basé sur la recommandation de son fournisseur de soins de santé. Cependant, si vous vivez dans une région touchée par le paludisme ou la dengue, il est important de ne pas ignorer les symptômes de la fièvre. Cherchez de l'aide médicale. Lorsque vous vous rendez dans l'établissement de santé, portez un masque si possible, éloignez-vous d'au moins 1 mètre des autres personnes et ne touchez pas les surfaces avec vos mains. S'il s'agit d'un enfant malade, aidez-le à suivre ce conseil. Si vous ne vivez pas dans une région touchée par le paludisme ou la dengue, procédez comme suit: - Si une personne est en isolement, c'est parce qu'elle est malade mais pas gravement malade (nécessitant des soins médicaux)  avoir un grand, bien ventilé avec hygiène des mains et toilettes Si cela n'est pas possible, placez les lits à au moins 1 mètre l'un de l'autre Gardez au moins 1 mètre des autres, même des membres de votre famille Surveillez vos symptômes quotidiennement Isoler pendant 14 jours, même si vous vous sentez en bonne santé Si vous avez des difficultés à respirer, contactez immédiatement votre professionnel de la santé - appelez-les d'abord si possible Restez positif et énergisé en restant en contact avec vos proches par téléphone ou en ligne, et en faisant de l'exercice à la maison."
+			},
+			{
+        "title": "Que puis-je faire pour me protéger et prévenir la propagation des maladies ?",
+        "text": "Restez au courant des dernières informations sur l'épidémie de COVID-19, disponibles sur le site Web de l'OMS et par le biais de votre autorité nationale et locale de santé publique. La plupart des pays du monde ont vu des cas de COVID-19 et beaucoup connaissent des flambées. Les autorités chinoises et certains autres pays ont réussi à ralentir leurs flambées. Cependant, la situation est imprévisible, alors vérifiez régulièrement les dernières nouvelles. Vous pouvez réduire vos risques d'être infecté ou de propager COVID-19 en prenant quelques précautions simples: Nettoyez régulièrement et soigneusement vos mains avec un désinfectant à base d'alcool ou lavez-les à l'eau et au savon. Pourquoi? Se laver les mains avec du savon et de l'eau ou utiliser un désinfectant pour les mains à base d'alcool tue les virus qui peuvent se trouver sur vos mains. Maintenez une distance d'au moins 1 mètre entre vous et les autres. Pourquoi? Lorsqu'une personne tousse, éternue ou parle, elle pulvérise de petites gouttelettes liquides de son nez ou de sa bouche qui peuvent contenir du virus. Si vous êtes trop proche, vous pouvez respirer les gouttelettes, y compris le virus COVID-19 si la personne a la maladie. Évitez d'aller dans des endroits bondés. Pourquoi? Lorsque les gens se rassemblent en foule, vous êtes plus susceptible d'entrer en contact étroit avec une personne atteinte de COVID-19 et il est plus difficile de maintenir une distance physique de 1 mètre. Évitez de toucher les yeux, le nez et la bouche. Pourquoi? Les mains touchent de nombreuses surfaces et peuvent détecter des virus. Une fois contaminées, les mains peuvent transmettre le virus aux yeux, au nez ou à la bouche. De là, le virus peut pénétrer dans votre corps et vous infecter. Assurez-vous que vous et les personnes qui vous entourent suivez une bonne hygiène respiratoire. Cela signifie vous couvrir la bouche et le nez avec vos coudes ou vos tissus pliés lorsque vous toussez ou éternuez. Jetez ensuite le mouchoir utilisé immédiatement et lavez-vous les mains. Pourquoi? Les gouttelettes propagent le virus. En suivant une bonne hygiène respiratoire, vous protégez votre entourage des virus tels que le rhume, la grippe et le COVID-19. Restez à la maison et isolez-vous même avec des symptômes mineurs tels que toux, maux de tête, fièvre légère, jusqu'à ce que vous récupériez. Demandez à quelqu'un de vous apporter des fournitures. Si vous devez quitter votre maison, portez un masque pour éviter d'infecter les autres. Pourquoi? Éviter le contact avec les autres les protégera contre d'éventuels COVID-19 et autres virus. Si vous avez de la fièvre, de la toux et des difficultés respiratoires, consultez un médecin, mais appelez si possible par téléphone à l'avance et suivez les instructions de votre autorité sanitaire locale. Pourquoi? Les autorités nationales et locales disposeront des informations les plus récentes sur la situation dans votre région. Un appel à l'avance permettra à votre fournisseur de soins de santé de vous diriger rapidement vers le bon établissement de santé. Cela vous protégera également et aidera à prévenir la propagation de virus et d'autres infections. Restez à jour sur les dernières informations provenant de sources fiables, telles que l'OMS ou vos autorités sanitaires locales et nationales. Pourquoi? Les autorités locales et nationales sont les mieux placées pour conseiller sur ce que les gens de votre région devraient faire pour se protéger."
+      }
+    ]
+  }
+}
