@@ -1,0 +1,8 @@
+2020/06/16 15:15:21 [emerg] 11#11: unknown directive "For" in /etc/nginx/sites-available/default.conf:15
+2020/06/16 19:49:15 [emerg] 9#9: unknown directive "For" in /etc/nginx/sites-available/default.conf:15
+2020/06/17 20:44:03 [emerg] 8#8: unknown directive "For" in /etc/nginx/sites-available/default.conf:15
+2020/06/19 12:03:19 [emerg] 9#9: unknown directive "For" in /etc/nginx/sites-available/default.conf:15
+2020/06/19 12:31:42 [emerg] 8#8: unknown directive "For" in /etc/nginx/sites-available/default.conf:15
+2020/06/22 11:54:52 [emerg] 9#9: unknown directive "For" in /etc/nginx/sites-available/default.conf:15
+2020/06/22 12:01:03 [emerg] 8#8: unknown directive "For" in /etc/nginx/sites-available/default.conf:15
+2020/06/22 12:03:56 [emerg] 8#8: unknown directive "For" in /etc/nginx/sites-available/default.conf:15
