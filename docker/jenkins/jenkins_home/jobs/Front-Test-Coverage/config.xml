@@ -28,8 +28,16 @@
         sh &apos;ls&apos;
         sh &apos;npm install&apos;
         sh &apos;npm run test&apos;
-        sh &apos;cp clover.xml ./clover.xml&apos;
+        sh &apos;pwd&apos;
         }
+        step([
+            $class:&apos;CloverPublisher&apos;,
+            cloverReportDir: &apos;/var/jenkins_home/workspace/Front-Test-Coverage/intellst-front/output/coverage/jest&apos;,
+            cloverReportFileName: &apos;clover.xml&apos;,
+            healthyTarget: [methodCoverage: 70, conditionalCoverage: 70, statementCoverage: 70],
+            unhealthyTarget: [methodCoverage: 50, conditionalCoverage: 50, statementCoverage: 50],
+            failingTarget: [methodCoverage: 0, conditionalCoverage: 0, statementCoverage: 0]
+            ])
       }
     }
   }
