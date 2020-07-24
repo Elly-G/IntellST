@@ -22,22 +22,15 @@
     
     stage(&apos;run tests&apos;) {
       steps {
-        dir(&quot;intellst-front&quot;) {
+        git branch: &apos;front-jenkins&apos;, url: &quot;https://github.com/Elly-G/IntellST.git&quot;
+        dir(&quot;intellst-front/output/coverage/jest/&quot;) {
         sh &apos;pwd&apos;
         sh &apos;ls&apos;
         sh &apos;npm install&apos;
-        sh &apos;npm run test:unit&apos;
-        sh &apos;ls&apos;
+        sh &apos;npm run test&apos;
+        sh &apos;cp clover.xml ./clover.xml&apos;
         }
       }
-    }
-    stage(&apos;run report with jest&apos;){
-        steps {
-             dir(&quot;intellst-front/output/coverage/jest/&quot;) {
-        sh &apos;pwd&apos;
-        sh &apos;ls&apos;
-        }
-        }
     }
   }
 }</script>
