@@ -13,7 +13,7 @@ class IdentifiedCaseDTO
      * @Serializer\Expose()
      * @Serializer\SerializedName("ID")
      */
-    public int $id;
+    public ?int $id = null;
 
     /**
      * @Serializer\Expose()

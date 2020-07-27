@@ -16,21 +16,6 @@ class EnterpriseDTO
 
     /**
      * @Serializer\Expose()
-     * @Serializer\SerializedName("name")
-     * @Serializer\Type("string")
-     * @Assert\NotBlank
-     */
-    public string $name;
-
-    /**
-     * @Serializer\Expose()
-     * @Serializer\SerializedName("users")
-     * @Assert\NotBlank
-     */
-    public $users;
-
-    /**
-     * @Serializer\Expose()
      * @Serializer\SerializedName("temperature")
      * @Serializer\Type("float")
      * @Assert\NotBlank
