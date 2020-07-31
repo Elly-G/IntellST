@@ -1,28 +1,21 @@
-# File Patterns to Ignore
-logs
-*.log
-*.log.*
-*.swp
+#ignore all JENKINS_HOME except jobs directory, root xml config, and .gitignore file
+/*
+!/jobs
+!/.gitignore
+!/*.xml
 
-# Ignore SSH Config
-.ssh/*
-!.ssh/known_hosts
+#ignore all files in jobs subdirectories except for folders
+#note: git doesn't track folders, only file content
+jobs/**
+!jobs/**/
 
-# Include job configs and ignore other data
+#uncomment the following line to save next build numbers with config
+!jobs/**/nextBuildNumber
+
+#exclude only config.xml files in repository subdirectories
 !config.xml
-builds
-lastStable
-lastSuccessful
-nextBuildNumber
 
-# Ignore expanded plugins folders because we only want jpi files
-plugins/*
-!plugins/*.jpi
+#don't track workspaces (when users build on the master)
+jobs/**/*workspace
 
-# Include user info
-!userContent/*
-!users/*
-
-# Ignore Directories
-workspace/
-war/
+#as a result only settings and job config.xml files in JENKINS_HOME will be tracked by git
