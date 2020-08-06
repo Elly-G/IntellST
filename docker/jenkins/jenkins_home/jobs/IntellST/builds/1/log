@@ -1,0 +1,42 @@
+Started by user [8mha:////4DmBafxsS7Y79TC7O4zSaW9V5JcmEhXnQPLJlCRUsk+AAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9zLyS1Jyc4hIAUzmjtcMAAAA=[0mIntellST
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/IntellST
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Elly-G/IntellST
+ > git init /var/jenkins_home/workspace/IntellST # timeout=10
+Fetching upstream changes from https://github.com/Elly-G/IntellST
+ > git --version # timeout=10
+ > git fetch --tags --force --progress -- https://github.com/Elly-G/IntellST +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Elly-G/IntellST # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Elly-G/IntellST # timeout=10
+Fetching upstream changes from https://github.com/Elly-G/IntellST
+ > git fetch --tags --force --progress -- https://github.com/Elly-G/IntellST +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/develop^{commit} # timeout=10
+Checking out Revision 6624686b8420c62eb3525dec93bf064f3b1ec020 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6624686b8420c62eb3525dec93bf064f3b1ec020 # timeout=10
+Commit message: "Merge pull request #20 from Elly-G/fr-alert"
+First time build. Skipping changelog.
+[IntellST] $ /bin/sh -xe /tmp/jenkins2063730064972508699.sh
++ docker exec -w /var/www laradock_workspace_1 bash -c ./bin/phpunit --coverage-clover results/clover.xml
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+.                                                                   1 / 1 (100%)
+
+Time: 1.26 seconds, Memory: 12.00 MB
+
+[30;42mOK (1 test, 3 assertions)[0m
+
+Generating code coverage report in Clover XML format ... done
++ docker cp laradock_workspace_1:/var/www/results/clover.xml ./clover.xml
+[IntellST] $ /bin/sh -xe /tmp/jenkins4488577723369519956.sh
+/tmp/jenkins4488577723369519956.sh: 2: /tmp/jenkins4488577723369519956.sh: Syntax error: EOF in backquote substitution
+Build step 'Execute shell' marked build as failure
+Publishing Clover coverage report...
+Publishing Clover XML report...
+Publishing Clover coverage results...
+Finished: FAILURE

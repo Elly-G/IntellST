@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='clover' version='4.11.1'><l:dependency name='Jenkins Clover plugin' groupId='org.jenkins-ci.plugins' artifactId='clover' version='4.11.1' url='http://wiki.jenkins-ci.org/display/JENKINS/Clover+Plugin'><l:description/></l:dependency><l:dependency name='Clover Ant' groupId='org.openclover' artifactId='clover' version='4.4.1' url='http://openclover.org'><l:description>Clover is an award winning code coverage and testing tool for Java and Groovy.
+        It integrates easily with Maven, Ant, Grails, Eclipse and IntelliJ IDEA
+        as well as with continuous integration servers such as Bamboo, Jenkins or Hudson.
+
+        Note: before Clover 4.0 this artifact was named com.cenqua.clover:clover.</l:description><l:license name='Apache License 2.0' url='http://www.apache.org/licenses/LICENSE-2.0'/></l:dependency></l:dependencies>

@@ -1,0 +1,18 @@
+commit dfcaa63b37d1980908f5f8dcc4de01568075693f
+tree 8bf44bc169080090f968a4f821721dfe5fd6fd57
+parent 8da305cc206c8bc7510341a08d07fc3293214efe
+author Ion98 <guideaion98@gmail.com> 2020-07-21 08:48:07 +0300
+committer Ion98 <guideaion98@gmail.com> 2020-07-21 08:48:07 +0300
+
+    Add unit tests
+
+
+:100644 100644 29959516b17d6ad631101e57ea50d66967cbdf79 3b728df4ca883180612cde1982acbc6f7f01426b M	docker/jenkins/jenkins_home/.owner
+:100644 100644 285a3995a6a63c6502abda911322d76d50522594 138d643e0231ece208fa7a8cb443b8fb8807db04 M	docker/jenkins/jenkins_home/queue.xml
+:100644 100644 e8baae2c4aca6f20aa501584d63210cf309070ee e17e76227f0ec5f56aa616dd603dd93a7f9655a7 M	docker/jenkins/jenkins_home/queue.xml.bak
+:100644 100644 0c2d737d8d17c998cb36ca5bb4aadd1d3b4e9aee 9f480547857e5bd14af9947375610ad84d8042c6 M	docker/jenkins/jenkins_home/updates/default.json
+:100644 100644 7841cd0857e98502810b6934045f523e50603d44 8ad09987fe1413da73744eed98d636041f8a7df0 M	intellst-api/src/DTO/IdentifiedCaseDTO.php
+:100644 100644 8b774566216ef7cafaefd5ebc7f4928d469b6a93 a5a20cc08fc33a9cbe7ad3c3b94faab6fee3a4d1 M	intellst-api/src/Entity/Enterprise.php
+:100644 100644 ddbde9c2abf391efd46f67e729ed92e7918609e1 8ad9031e2b4a504929ee7862b08b3522203c8e39 M	intellst-api/src/Entity/IdentifiedCase.php
+:000000 100644 0000000000000000000000000000000000000000 a98d4c677db61e5a7817ac525c6acadbcd84cfd9 A	intellst-api/tests/Services/EnterpriseHandlerTest.php
+:100644 100644 6c1935cd5986f6a541ed7f23aabbeeed5b2957b1 be500c2c1bfe305fd410e44f0fd65d40ff3f0123 M	intellst-api/tests/Services/IdentifiedCaseHandlerTest.php

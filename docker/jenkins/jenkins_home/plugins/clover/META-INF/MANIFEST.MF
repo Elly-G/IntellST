@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: Marek
+Build-Jdk: 1.8.0_121
+Extension-Name: clover
+Implementation-Title: clover
+Implementation-Version: 4.11.1
+Group-Id: org.jenkins-ci.plugins
+Short-Name: clover
+Long-Name: Jenkins Clover plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Clover+Plugin
+Plugin-Version: 4.11.1
+Hudson-Version: 1.642.3
+Jenkins-Version: 1.642.3
+Plugin-Developers: Marek Parfianowicz:marek-parfianowicz:marek.parfian
+ owicz@gmail.com,Grzegorz Lewandowski:grzlew:grzlew@gmail.com
+

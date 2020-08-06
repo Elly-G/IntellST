@@ -1,0 +1,66 @@
+commit bdd3b5f0fe4953d3e962d29978ef909113d221d0
+tree 0ef1d3d7283e3a8eb207a087bea980a90f7a3a54
+parent ebcc396d41c753f01c0eccaf16fbed9e211b7916
+author aghermanHP <adrian.gherman1@gmail.com> 2020-07-24 17:17:12 +0300
+committer aghermanHP <adrian.gherman1@gmail.com> 2020-07-24 17:17:12 +0300
+
+    was aded test-coverage for front-end
+
+
+:100644 100644 29959516b17d6ad631101e57ea50d66967cbdf79 147a5655f09653cfee6df4fce9acc29503fa09cc M	docker/jenkins/jenkins_home/.owner
+:100644 100644 c1e9d856c3bb3f3164c84b24bfdb94adaedcfa08 b8f501a8d0d40c2395eea633a6fd39a79133c6be M	docker/jenkins/jenkins_home/config.xml
+:100644 100644 daed37fc2a68b25896e788f7ef7a943a6646d898 19913beee62e0bcb4dc6377cd8c25cba7329e0fb M	docker/jenkins/jenkins_home/jobs/Front-Test-Coverage/config.xml
+:100644 000000 ba8472c8bbdee8b79923bdbbeae30ffadb042545 0000000000000000000000000000000000000000 D	docker/jenkins/jenkins_home/jobs/test_coverage_front/config.xml
+:100644 000000 0329f264a413c51e01a883d5fb5ca8e5538d32dc 0000000000000000000000000000000000000000 D	docker/jenkins/jenkins_home/jobs/test_coverage_front/indexing/indexing.xml
+:100644 000000 a9e5ed6d8d98d997d60fb34e3694defcadfa4de6 0000000000000000000000000000000000000000 D	docker/jenkins/jenkins_home/jobs/test_coverage_front/state.xml
+:100644 100644 7ab37714b9bd71ad3fe2c6bed7c12c9761c6cdfe de3d5a10b984710d14f3718a01e29a0e26169d67 M	docker/jenkins/jenkins_home/org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+:000000 100644 0000000000000000000000000000000000000000 ccda7e3a78b70434181d181ff1135f7550f936b2 A	docker/jenkins/jenkins_home/plugins/clover.jpi
+:100644 100644 2e2bbdecde194dad93330a14fbcc1c497b66aee2 7817b38610557211c9591d841601e8d141e1ee2b M	docker/jenkins/jenkins_home/queue.xml
+:100644 100644 8c7b2bc0b47403b8f8769bc334ca040d8c383e01 dd6f89117becbfcaa1c85a947918f7ac321d952e M	docker/jenkins/jenkins_home/users/users.xml
+commit 017d9dcabcbd5c3a7b210c5568d036fcc4c3fae7
+tree d7e532e4f02dd281d32526b84f56af8c5676f5d1
+parent 2403d1257accd3a383585219ce82332e2e642f05
+author Ion98 <guideaion98@gmail.com> 2020-07-24 12:33:02 +0300
+committer Ion98 <guideaion98@gmail.com> 2020-07-24 12:33:02 +0300
+
+    show connected user
+
+
+:100644 100644 6e8c34713579b283d0a80a5dc6ecbb53ee657a31 c5b714fe7367b6aba12247ef8487563c02291b4d M	docker/jenkins/jenkins_home/.owner
+:100644 100644 0c2d737d8d17c998cb36ca5bb4aadd1d3b4e9aee 2405145064d6244df7fa48cba83f2cf7e68492a4 M	docker/jenkins/jenkins_home/updates/default.json
+:100644 100644 760fee6cd372072489c0965204c7ebe63a4f3dd1 403012ade66ef056143a18fbca7838efd2383fd8 M	docker/jenkins/jenkins_home/updates/hudson.plugins.gradle.GradleInstaller
+commit 2403d1257accd3a383585219ce82332e2e642f05
+tree 0c71152668e6552281e82df3fcc55fe82ca131e6
+parent 6624686b8420c62eb3525dec93bf064f3b1ec020
+author Ion98 <guideaion98@gmail.com> 2020-07-22 11:44:53 +0300
+committer Ion98 <guideaion98@gmail.com> 2020-07-22 11:44:53 +0300
+
+    show connected user
+
+
+:100644 100644 29959516b17d6ad631101e57ea50d66967cbdf79 6e8c34713579b283d0a80a5dc6ecbb53ee657a31 M	docker/jenkins/jenkins_home/.owner
+:100644 000000 138d643e0231ece208fa7a8cb443b8fb8807db04 0000000000000000000000000000000000000000 D	docker/jenkins/jenkins_home/queue.xml
+:100644 100644 e8baae2c4aca6f20aa501584d63210cf309070ee a7955eaf8fabab6a780047d7410345b1d69b0f3e M	docker/jenkins/jenkins_home/queue.xml.bak
+:100644 100644 2558601b2583cc9dd97a4b80c38748a86f81689a 69ad85e3af6b4d99e620e407577996447b67dfd6 M	intellst-api/config/packages/lexik_jwt_authentication.yaml
+:000000 100644 0000000000000000000000000000000000000000 aa768b7c72bfbe6fc6b08e22ec5714bdb5a70106 A	intellst-api/src/Controller/UserControler.php
+:000000 100644 0000000000000000000000000000000000000000 53d1ec87b6f3359444f71c988ca57b00e62fce71 A	intellst-api/src/DTO/UserDTO.php
+:000000 100644 0000000000000000000000000000000000000000 d8d5aff4c6cc3740760f34a01da71d45ca039452 A	intellst-api/src/Services/UserHandler.php
+:000000 100644 0000000000000000000000000000000000000000 3a8dd0b2a2f1b85457bcf902a7337bd80512d350 A	intellst-api/src/Transformer/UserTransformer.php
+commit dfcaa63b37d1980908f5f8dcc4de01568075693f
+tree 8bf44bc169080090f968a4f821721dfe5fd6fd57
+parent 8da305cc206c8bc7510341a08d07fc3293214efe
+author Ion98 <guideaion98@gmail.com> 2020-07-21 08:48:07 +0300
+committer Ion98 <guideaion98@gmail.com> 2020-07-21 08:48:07 +0300
+
+    Add unit tests
+
+
+:100644 100644 29959516b17d6ad631101e57ea50d66967cbdf79 3b728df4ca883180612cde1982acbc6f7f01426b M	docker/jenkins/jenkins_home/.owner
+:100644 100644 285a3995a6a63c6502abda911322d76d50522594 138d643e0231ece208fa7a8cb443b8fb8807db04 M	docker/jenkins/jenkins_home/queue.xml
+:100644 100644 e8baae2c4aca6f20aa501584d63210cf309070ee e17e76227f0ec5f56aa616dd603dd93a7f9655a7 M	docker/jenkins/jenkins_home/queue.xml.bak
+:100644 100644 0c2d737d8d17c998cb36ca5bb4aadd1d3b4e9aee 9f480547857e5bd14af9947375610ad84d8042c6 M	docker/jenkins/jenkins_home/updates/default.json
+:100644 100644 7841cd0857e98502810b6934045f523e50603d44 8ad09987fe1413da73744eed98d636041f8a7df0 M	intellst-api/src/DTO/IdentifiedCaseDTO.php
+:100644 100644 8b774566216ef7cafaefd5ebc7f4928d469b6a93 a5a20cc08fc33a9cbe7ad3c3b94faab6fee3a4d1 M	intellst-api/src/Entity/Enterprise.php
+:100644 100644 ddbde9c2abf391efd46f67e729ed92e7918609e1 8ad9031e2b4a504929ee7862b08b3522203c8e39 M	intellst-api/src/Entity/IdentifiedCase.php
+:000000 100644 0000000000000000000000000000000000000000 a98d4c677db61e5a7817ac525c6acadbcd84cfd9 A	intellst-api/tests/Services/EnterpriseHandlerTest.php
+:100644 100644 6c1935cd5986f6a541ed7f23aabbeeed5b2957b1 be500c2c1bfe305fd410e44f0fd65d40ff3f0123 M	intellst-api/tests/Services/IdentifiedCaseHandlerTest.php
