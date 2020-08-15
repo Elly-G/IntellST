@@ -45,6 +45,11 @@ const router = new Router({
               name: "NotificationPage",
               component: () => import("../views/NotificationPage.vue"),
             },
+            {
+              path: "/camera",
+              name: "Camera",
+              component: () => import("../views/VCamera.vue"),
+            },
           ],
         },
       ],

@@ -11,7 +11,6 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=EnterpriseRepository::class)
- * @UniqueEntity("name")
  */
 class Enterprise
 {

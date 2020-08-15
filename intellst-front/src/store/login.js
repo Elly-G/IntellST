@@ -1,4 +1,4 @@
-import Axios from "axios";
+import Axios from "../api/axios.js";
 import router from "../router";
 
 const login = {
@@ -8,13 +8,14 @@ const login = {
     allData: null,
     status: null,
     error: null,
+    userData: null,
   }),
   mutations: {
-    setUser(state, payload) {
+    setToken(state, payload) {
       state.userToken = payload;
     },
 
-    removeUser(state) {
+    removeToken(state) {
       state.userToken = null;
     },
 
@@ -25,32 +26,49 @@ const login = {
     setError(state, payload) {
       state.error = payload;
     },
+
+    setUser(state, payload) {
+      state.userData = payload;
+    },
+
+    removeUser(state) {
+      state.userData = null;
+    },
   },
   actions: {
     signInAction({ commit, dispatch }, payload) {
-      Axios.create({ baseURL: process.env.VUE_APP_BASE_API })
-        .post("login_check", {
-          username: payload.username,
-          password: payload.password,
-        })
-        .then((response) => {
-          let x = response.data;
-          commit("setUser", x.token);
+      Axios.post("login_check", {
+        username: payload.username,
+        password: payload.password,
+      })
+        .then(({ data: { token } }) => {
+          commit("setToken", token);
           commit("setStatus", "success");
-          commit("setError", null);
-          localStorage.setItem("token", x.token);
+
+          localStorage.setItem("token", token);
+
           router.push("/");
           dispatch(
             "snackbar/showSnack",
             {
               message: "You've succesfully logged in!",
-              type: "error",
+              type: "success",
             },
             { root: true }
           );
         })
-        .catch((error) => {
-          alert(error);
+        .catch((e) => {
+          commit("setError", e);
+        });
+    },
+    getUserInfo({ commit }) {
+      Axios.get(`/api/user`)
+        .then(({ data }) => {
+          commit("setUser", { ...data[0] });
+        })
+        .catch(() => {
+          // localStorage.removeItem("token");
+          // router.push("/login");
         });
     },
   },

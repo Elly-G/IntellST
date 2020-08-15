@@ -53,10 +53,8 @@
 
 <script>
 export default {
-  data() {
-    return {
-      dialog: false,
-    };
-  },
+  data: () => ({
+    dialog: false,
+  }),
 };
 </script>
