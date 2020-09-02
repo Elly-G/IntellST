@@ -6,6 +6,16 @@ import Vuetify from "vuetify";
 Vue.use(Vuetify);
 
 describe("Login.vue", () => {
+  it("render a alert", () => {
+    const wrapper = shallowMount(Login, {
+      mocks: {
+        $t: () => {},
+      },
+    });
+    const alert = wrapper.find("v-alert");
+    expect(alert.exists()).toBe(false);
+  });
+
   it("render a form", () => {
     const wrapper = shallowMount(Login, {
       mocks: {
@@ -24,5 +34,35 @@ describe("Login.vue", () => {
     });
     const button = wrapper.find("v-btn");
     expect(button.exists()).toBe(false);
+  });
+
+  it("render a container", () => {
+    const wrapper = shallowMount(Login, {
+      mocks: {
+        $t: () => {},
+      },
+    });
+    const container = wrapper.find("v-container");
+    expect(container.exists()).toBe(false);
+  });
+
+  it("render a text fields", () => {
+    const wrapper = shallowMount(Login, {
+      mocks: {
+        $t: () => {},
+      },
+    });
+    const field = wrapper.find("v-text-field");
+    expect(field.exists()).toBe(false);
+  });
+
+  it("render card actions", () => {
+    const wrapper = shallowMount(Login, {
+      mocks: {
+        $t: () => {},
+      },
+    });
+    const actions = wrapper.find("v-card-actions");
+    expect(actions.exists()).toBe(false);
   });
 });

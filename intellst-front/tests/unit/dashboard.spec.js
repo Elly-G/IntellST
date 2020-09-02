@@ -8,14 +8,14 @@ Vue.use(Vuetify);
 Vue.use(VueRouter);
 
 describe("Dashboard", () => {
-  it("render navigation drawer", () => {
+  it("render menu", () => {
     const wrapper = shallowMount(Dashboard, {
       mocks: {
         $t: () => {},
       },
     });
-    const navigation = wrapper.find("v-navigation-drawer");
-    expect(navigation.exists()).toBe(false);
+    const menu = wrapper.find("v-menu");
+    expect(menu.exists()).toBe(false);
   });
 
   it("render logo", () => {
@@ -28,24 +28,24 @@ describe("Dashboard", () => {
     expect(img.exists()).toBe(true);
   });
 
-  it("render LanguageSwitcher", () => {
+  it("render language switcher", () => {
     const wrapper = shallowMount(Dashboard, {
       mocks: {
         $t: () => {},
       },
     });
-    const LanguageSwitcher = wrapper.find("LanguageSwitcher");
-    expect(LanguageSwitcher.exists()).toBe(false);
+    const switcher = wrapper.find("language-switcher");
+    expect(switcher.exists()).toBe(false);
   });
 
-  it("render card", () => {
+  it("render user", () => {
     const wrapper = shallowMount(Dashboard, {
       mocks: {
         $t: () => {},
       },
     });
-    const card = wrapper.find("v-card");
-    expect(card.exists()).toBe(false);
+    const user = wrapper.find("v-user");
+    expect(user.exists()).toBe(false);
   });
 
   it("render content", () => {
@@ -56,6 +56,16 @@ describe("Dashboard", () => {
     });
     const content = wrapper.find("v-main");
     expect(content.exists()).toBe(false);
+  });
+
+  it("render buttons", () => {
+    const wrapper = shallowMount(Dashboard, {
+      mocks: {
+        $t: () => {},
+      },
+    });
+    const buttons = wrapper.find("v-btn");
+    expect(buttons.exists()).toBe(false);
   });
 
   it("render footer", () => {

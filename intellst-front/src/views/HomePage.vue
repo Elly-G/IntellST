@@ -1,32 +1,20 @@
 <template>
-  <v-container class="fill-height home" fluid>
+  <v-container fluid>
     <v-row>
-      <v-col cols="12" sm="6">
-        <div class="chart mb-2">
-          <h1 style="text-align: center;">{{ $t("home.graph1") }}</h1>
-          <BarChart />
-        </div>
-      </v-col>
-
-      <v-col cols="12" sm="6">
-        <div class="chart mb-2">
-          <h1 style="text-align: center;">{{ $t("home.graph2") }}</h1>
-          <LineChart />
-        </div>
-      </v-col>
-
-      <v-col cols="12" sm="6">
-        <div class="chart mb-2">
+      <v-col cols="12" md="6">
+        <div class="chart">
           <h1 style="text-align: center;">
-            {{ $t("home.graph3") }}
+            {{ $t("home.graph1") }} {{ $t("home.and") }} {{ $t("home.graph2") }}
           </h1>
           <BarChart />
         </div>
       </v-col>
 
-      <v-col cols="12" sm="6">
-        <div class="chart mb-2">
-          <h1 style="text-align: center;">{{ $t("home.graph4") }}</h1>
+      <v-col cols="12" md="6">
+        <div class="chart">
+          <h1 style="text-align: center;">
+            {{ $t("home.graph1") }} {{ $t("home.and") }} {{ $t("home.graph3") }}
+          </h1>
           <LineChart />
         </div>
       </v-col>

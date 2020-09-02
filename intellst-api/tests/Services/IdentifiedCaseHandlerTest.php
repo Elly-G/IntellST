@@ -4,8 +4,13 @@ namespace App\Tests\Services;
 
 use App\DTO\AllowEntranceDTO;
 use App\DTO\IdentifiedCaseDTO;
+use App\Entity\Enterprise;
 use App\Entity\IdentifiedCase;
+use App\Entity\User;
+use App\Repository\IdentifiedCaseRepository;
 use App\Services\IdentifiedCaseHandler;
+use App\Services\UserHandler;
+use App\Transformer\EnterpriseTransformer;
 use App\Transformer\IdentifiedCaseTransformer;
 use DateTime;
 use PHPUnit\Framework\TestCase;
@@ -17,27 +22,70 @@ class IdentifiedCaseHandlerTest extends TestCase
 {
     private function getHandler(): IdentifiedCaseHandler
     {
-        $repositoryMock = $this->createMock(ObjectRepository::class);
+        $identifiedCaseRepositoryMock = $this->createMock(ObjectRepository::class);
+        $identifiedCaseRepositoryMock
+            ->method('find')
+            ->willReturnMap(
+                [
+                    [1, new IdentifiedCase()],
+                    [2, null],
+                ]
+            );
+
+        $enterpriseTransformerMock = $this->createMock(ObjectRepository::class);
+        $enterpriseTransformerMock
+            ->method('find')
+            ->willReturnMap(
+                [
+                    [1,new Enterprise()],
+                    [2, null],
+                ]
+            );
+
+        $userHandlerMock = $this->createMock(ObjectRepository::class);
+        $userHandlerMock
+            ->method('find')
+            ->willReturnMap(
+                [
+                    [1, new User()],
+                    [2, null],
+                ]
+            );
+
         $emMock = $this->createMock(EntityManagerInterface::class);
         $emMock
             ->method('getRepository')
-            ->willReturn($repositoryMock);
+            ->willReturnMap(
+                [
+                    [IdentifiedCase::class, $identifiedCaseRepositoryMock],
+                    [Enterprise::class, $enterpriseTransformerMock],
+                    [User::class, $userHandlerMock],
+                ]
+            );
 
-        $transformer = new IdentifiedCaseTransformer();
+        $transformer = new IdentifiedCaseTransformer($emMock);
         $validator = Validation::createValidatorBuilder()->enableAnnotationMapping()->getValidator();
+        $enterpriseTransformer = new EnterpriseTransformer();
+        $userHandler = new UserHandler($emMock, $transformer);
 
-        return new IdentifiedCaseHandler($emMock,
+        return new IdentifiedCaseHandler(
+            $emMock,
             $validator,
-            $transformer);
+            $transformer,
+            $enterpriseTransformer,
+            $userHandler);
     }
+
 
     private function getIdentifiedCaseDTO(): IdentifiedCaseDTO
     {
         $dto = new IdentifiedCaseDTO();
         $dto->photoFilename = '/homme/';
+        $dto->uuid = 'jafasfrt5etgrvgdg';
         $dto->temperature = 39;
         $dto->datePhoto = new DateTime('2020-01-01T15:03:01.012345Z');
         $dto->firstDate = new DateTime('2020-01-01T15:03:01.012345Z');
+        $dto->enterprise = 2;
 
         return $dto;
     }
@@ -117,7 +165,8 @@ class IdentifiedCaseHandlerTest extends TestCase
         $handler = new IdentifiedCaseHandler(
             $emMock,
             $validator,
-            $transformer);
+            $transformer
+        );
 
         $result = $handler->getList();
 

@@ -51,11 +51,6 @@ class Enterprise
      */
     private int $restrictionPeriod;
 
-    public function __construct()
-    {
-        $this->users = new ArrayCollection();
-    }
-
     public function getId(): ?int
     {
         return $this->id;

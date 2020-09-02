@@ -13,12 +13,12 @@
                 </div>
                 <v-col cols="3" style="margin-left: auto;">
                   <ValidationProvider
-                    rules="between:35,38"
+                    rules="between:36,38"
                     name="Temperature"
                     v-slot="{ errors }"
                   >
                     <v-text-field
-                      v-model="temperature"
+                      v-model="entreprise.temperature"
                       required
                       :error-messages="errors"
                       step=".1"
@@ -42,7 +42,7 @@
                     v-slot="{ errors }"
                   >
                     <v-text-field
-                      v-model="days"
+                      v-model="entreprise.restrictionPeriod"
                       required
                       :error-messages="errors"
                       label=""
@@ -56,7 +56,7 @@
           </v-list-item>
           <v-card-actions>
             <v-col class="text-center">
-              <v-btn @click="submit" color="red">{{
+              <v-btn @click="submit(entreprise)" color="red">{{
                 $t("settings.save")
               }}</v-btn>
             </v-col>
@@ -68,6 +68,7 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 import { between, max } from "vee-validate/dist/rules";
 import {
   extend,
@@ -93,12 +94,16 @@ export default {
     ValidationObserver,
   },
   data: () => ({
-    days: "",
-    temperature: "",
+    entreprise: {
+      temperature: "",
+      restrictionPeriod: "",
+    },
   }),
   methods: {
+    ...mapActions("login", ["setSettings"]),
     submit() {
       this.$refs.observer.validate();
+      this.setSettings(this.entreprise);
     },
   },
 };

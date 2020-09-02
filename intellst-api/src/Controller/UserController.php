@@ -3,11 +3,10 @@
 namespace App\Controller;
 
 use App\Services\UserHandler;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 
-class UserControler extends AbstractController
+class UserController
 {
     /**
      * @var UserHandler
@@ -16,17 +15,16 @@ class UserControler extends AbstractController
 
     public function __construct(
         UserHandler $userHandler
-    )
-    {
+    ) {
         $this->userHandler = $userHandler;
     }
 
     /**
      * @Route("/api/user", name="user_Conected", methods={"Get"})
      */
-    public function listUser(): JsonResponse
+    public function getCurrentUser(): JsonResponse
     {
-        $list = $this->userHandler->getList();
+        $list = $this->userHandler->getCurrentUser();
 
         return new JsonResponse($list);
     }

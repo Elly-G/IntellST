@@ -17,11 +17,19 @@ class IdentifiedCaseDTO
 
     /**
      * @Serializer\Expose()
-     * @Serializer\SerializedName("name")
+     * @Serializer\SerializedName("photoFilename")
      * @Serializer\Type("string")
      * @Assert\NotBlank
      */
     public string $photoFilename;
+
+    /**
+     * @Serializer\Expose()
+     * @Serializer\SerializedName("uuid")
+     * @Serializer\Type("string")
+     * @Assert\NotBlank
+     */
+    public string $uuid;
 
     /**
      * @Serializer\Expose()

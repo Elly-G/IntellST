@@ -40,4 +40,14 @@ class UserDTO
      * @Serializer\SerializedName("email")
      */
     public string $email;
+
+    /**
+     * Enterprise User
+     * @var integer
+     * @Assert\NotNull
+     * @Serializer\Type("integer")
+     * @Serializer\Expose()
+     * @Serializer\SerializedName("enterprise")
+     */
+    public $enterprise;
 }

@@ -7,9 +7,9 @@
   },
   "home": {
     "graph1": "Numărul de intrări pe zi",
-    "graph2": "Numărul de persoane detectate",
-    "graph3": "Numărul de returnări ale persoanelor interzise",
-    "graph4": "Numărul de persoane cu febră"
+    "graph2": "Numărul de intrări valabile pe zi",
+    "graph3": "Numărul de returnări a persoanelor interzise",
+    "and": "și"
   },
   "cases": {
     "title": "Сazuri identificate",
@@ -17,6 +17,7 @@
     "popup": {
       "title": "Informații despre persoană",
       "temperature": "Temperatură",
+      "face": "Persoana a fost identificată",
       "date": "Febră pentru prima dată identificată",
       "return": "Tentativă de întrare reperată",
       "instructions": "Vezi instrucțiuni",
@@ -33,12 +34,13 @@
     "save": "Salvați"
   },
   "notifications": {
-    "new": "Noi notificări",
-    "old": "Notifications mai vechi",
+    "case": "Сazuri identificate",
+    "attempt": "Tentative repetate de intrare",
     "head": "Atenție:",
-    "body1": "nouă încercare de întoarcere",
-    "body2": "caz nou identificat",
-    "link": "Vezi cazul"
+    "body1": "nouă încercare de întoarcere cu febra",
+    "body2": "caz nou identificat cu febra",
+    "link": "Vezi cazul",
+    "at": "la"
   },
   "faq": {
     "title1": "Întrebări frecvente",
@@ -51,42 +53,34 @@
         "title": "Ce este COVID-19 ?",
         "text": "COVID-19 este boala infecțioasă cauzată de coronavirusul cel mai recent descoperit. Acest nou virus și boală nu au fost cunoscute înainte de apariția focarului în Wuhan, China, în decembrie 2019. COVID-19 este acum o pandemie care afectează multe țări la nivel mondial."
       },
-
       {
         "title": "Care sunt simptomele COVID-19 ?",
         "text": "Cele mai frecvente simptome ale COVID-19 sunt febra, tusea uscată și oboseala. Alte simptome care sunt mai puțin frecvente și pot afecta unii pacienți includ durerile și durerile, congestia nazală, cefaleea, conjunctivita, durerile de gât, diareea, pierderea gustului sau a mirosului sau o erupție pe piele sau decolorarea degetelor sau degetelor de la picioare. Aceste simptome sunt de obicei ușoare și încep treptat. Unele persoane se infectează dar au doar simptome foarte ușoare. Majoritatea oamenilor (aproximativ 80%) se recuperează de boală fără a avea nevoie de tratament la spital. Aproximativ 1 din 5 persoane care suferă COVID-19 devine grav bolnav și prezintă dificultăți de respirație. Persoanele în vârstă, precum și cele cu probleme medicale subiacente, cum ar fi hipertensiunea arterială, probleme cardiace și pulmonare, diabet sau cancer, prezintă un risc mai mare de a dezvolta boli grave. Cu toate acestea, oricine poate prinde COVID-19 și se poate îmbolnăvi grav. Persoanele de toate vârstele care prezintă febră și / sau tuse asociate cu respirație retifficativă / respirație, durere / presiune toracică sau pierderea vorbirii sau mișcării trebuie să solicite imediat asistență medicală. Dacă este posibil, se recomandă să apelați mai întâi furnizorul sau unitatea de asistență medicală, astfel încât pacientul să poată fi direcționat către clinica potrivită."
       },
-
       {
         "title": "Ce ar trebui să fac daca am simptome COVID-19 și cand ar trebui să solicit ingrijiri medicale ?",
         "text": "Dacă aveți simptome minore, cum ar fi o tuse ușoară sau o febră ușoară, în general nu este necesar să solicitați îngrijiri medicale. Rămâi acasă, auto-izolați și monitorizați-vă simptomele. Urmați îndrumările naționale privind izolarea de sine. Cu toate acestea, dacă trăiești într-o zonă cu malarie sau febră dengue, este important să nu ignori simptomele febrei. Caută ajutor medical. Când participi la unitatea sanitară poartă o mască, dacă este posibil, păstrează cel puțin 1 metru distanță față de alte persoane și nu atinge suprafețele cu mâinile tale. Dacă este un copil bolnav, ajută-l pe copil să respecte acest sfat. Căutați îngrijiri medicale imediate dacă aveți dificultăți în respirație sau durere / presiune în piept. Dacă este posibil, sunați-vă în prealabil furnizorul de servicii medicale, astfel încât acesta să vă poată direcționa către unitatea de sănătate potrivită."
       },
-
       {
         "title": "Cum se raspandeste COVID-19 ?",
         "text": "Oamenii pot prinde COVID-19 de la alții care au virusul. Boala se răspândește în primul rând de la persoană la persoană prin picături mici din nas sau gură, care sunt expulzate atunci când o persoană cu COVID-19 tuseste, strănut sau vorbește. Aceste picături sunt relativ grele, nu călătoresc departe și se scufundă rapid la pământ. Oamenii pot prinde COVID-19 dacă inspiră aceste picături de la o persoană infectată cu virusul. Acesta este motivul pentru care este important să stați la cel puțin 1 metru) de ceilalți. Aceste picături pot ateriza pe obiecte și suprafețe din jurul persoanei, cum ar fi tabele, butoane de mână și balustrade. Oamenii se pot infecta prin atingerea acestor obiecte sau suprafețe, apoi atingerea ochilor, nasului sau gurii. Acesta este motivul pentru care este important să vă spălați mâinile în mod regulat cu săpun și apă sau să curățați cu frecare de mână pe bază de alcool. OMS evaluează cercetările în curs privind modalitățile de răspândire a COVID-19 și va continua să împărtășească rezultatele actualizate.   "
       },
-
       {
         "title": "Poate COVID-19 să fie prins de la o persoană care nu are simptome",
         "text": "COVID-19 este răspândit în principal prin picături respiratorii expulzate de cineva care tuse sau are alte simptome precum febră sau oboseală. Multe persoane cu COVID-19 prezintă doar simptome ușoare. Acest lucru este valabil în special în stadiile incipiente ale bolii. Este posibil să prindem COVID-19 de la cineva care are doar o tuse ușoară și nu se simte rău. Unele rapoarte au indicat că persoanele fără simptome pot transmite virusul. Nu se știe încă cât de des se întâmplă. OMS evaluează cercetările în curs pe această temă și va continua să împărtășească rezultatele actualizate."
       },
-
       {
         "title": "Cum îi putem proteja pe ceilalți și pe noi înșine dacă nu știm cine este infectat ?",
         "text": "Practicarea igienei respiratorii a mâinilor și a căilor respiratorii este importantă în orice moment și este cea mai bună metodă de a-i proteja pe ceilalți și pe tine însuți . Când este posibil, mențineți o distanță de cel puțin 1 metru între dvs. și ceilalți. Acest lucru este deosebit de important dacă stai lângă cineva care tuse sau strănut. Deoarece este posibil ca unele persoane infectate să nu prezinte încă simptome sau simptomele lor pot fi ușoare, menținerea unei distanțe fizice cu toată lumea este o idee bună dacă vă aflați într-o zonă în care COVID-19 circulă. "
       },
-
       {
         "title": "Ce ar trebui să fac dacă am luat un contact strâns cu cineva care are COVID-19 ?",
         "text": "Dacă ați fost în contact strâns cu cineva cu COVID-19, este posibil să fiți infectat. Contactul strâns înseamnă că trăiești cu sau ai fost în situații mai mici de 1 metru față de cei care au boala. În aceste cazuri, cel mai bine este să stai acasă. Cu toate acestea, dacă trăiești într-o zonă cu malarie sau febră dengue, este important să nu ignori simptomele febrei. Caută ajutor medical. Când participi la unitatea sanitară poartă o mască, dacă este posibil, țineți cel puțin 1 metru distanță față de alte persoane și nu atingeți suprafețele cu mâinile. Dacă este un copil bolnav, ajută-l pe copil să respecte acest sfat. Dacă nu locuiești într-o zonă cu malarie sau febră dengue, faceți următoarele: \n Dacă vă îmbolnăviți, chiar și cu simptome foarte ușoare, trebuie să vă auto-izolați \n Chiar dacă nu credeți că ați fost expus la COVID-19, dar dezvoltați simptome, atunci auto-izolați și monitorizați-vă \n Aveți mai multe șanse să infectați pe alții în stadiile incipiente ale bolii atunci când aveți doar simptome ușoare, de aceea auto-izolarea timpurie este foarte importantă. \n Dacă nu aveți simptome, dar ați fost expusă unei persoane infectate, auto-carantină timp de 14 zile. \n Dacă aveți cu siguranță COVID-19 (confirmat printr-un test) auto-izolat timp de 14 zile, chiar și după dispariția simptomelor ca măsură de precauție - nu se știe încă cât timp rămân infecțioase după ce s-au recuperat. Urmați sfaturile naționale cu privire la autoizolare."
       },
-
       {
         "title": "Ce înseamnă să te auto-izolezi ?",
         "text": "Izolarea de sine este o măsură importantă luată de cei care au simptome COVID-19 pentru a evita infectarea altora din comunitate, inclusiv membrii familiei. Izolarea de sine se produce atunci când o persoană care se confruntă cu febră, tuse sau alte simptome COVID-19 rămâne acasă și nu merge la serviciu, la școală sau în locuri publice. Acest lucru poate fi voluntar sau bazat pe recomandarea furnizorului său de asistență medicală. Cu toate acestea, dacă trăiești într-o zonă cu malarie sau febră dengue, este important să nu ignori simptomele febrei. Caută ajutor medical. Când participi la unitatea sanitară poartă o mască, dacă este posibil, țineți cel puțin 1 metru distanță față de alte persoane și nu atingeți suprafețele cu mâinile. Dacă este un copil bolnav, ajută-l pe copil să respecte acest sfat. Dacă nu locuiești într-o zonă cu malarie sau febră dengue, faceți următoarele: - Dacă o persoană se autoizolează, se datorează faptului că este bolnavă, dar nu este grav bolnavă (necesitând îngrijiri medicale) au o instalație mare, bine ventilată, cu igienă a mâinilor și toalete Dacă acest lucru nu este posibil, așezați paturi la o distanță de cel puțin 1 metru Păstrați cel puțin 1 metru față de ceilalți, chiar și de la membrii familiei voastre Monitorizează-ți simptomele zilnic Izolați-vă timp de 14 zile, chiar dacă vă simțiți sănătos Dacă întâmpinați dificultăți în respirație, contactați imediat furnizorul de asistență medicală - apelați-i mai întâi dacă este posibil Rămâneți pozitiv și energizat, păstrând legătura cu persoanele dragi prin telefon sau online și exersându-vă acasă."
       },
-
       {
         "title": "Ce pot face pentru a mă proteja și pentru a preveni răspândirea bolilor ?",
         "text": "Fiți la curent cu cele mai recente informații despre focarul COVID-19, disponibile pe site-ul OMS și prin intermediul autorității dumneavoastră naționale și locale de sănătate publică. Majoritatea țărilor din întreaga lume au observat cazuri de COVID-19 și multe dintre ele se confruntă cu focare. Autoritățile din China și din alte țări au reușit să încetinească focarele. Cu toate acestea, situația este imprevizibilă, așa că verificați în mod regulat cele mai recente știri. Puteți reduce șansele de a fi infectat sau de a răspândi COVID-19 luând câteva măsuri de precauție simple: Curățați-vă regulat și bine mâinile cu o frecare pe mâini pe bază de alcool sau spălați-le cu apă și săpun. De ce? Spălarea mâinilor cu apă și săpun sau folosirea frecării pe bază de alcool ucide viruși care pot fi pe mâinile tale. Mențineți distanța de cel puțin 1 metru între dvs. și ceilalți. De ce? Când cineva tușește, strănut sau vorbește, pulverizează mici picături de lichid din nas sau gură, care pot conține virus. Dacă sunteți prea aproape, puteți respira picăturile, inclusiv virusul COVID-19 dacă persoana are boala. Evitați să mergeți în locuri aglomerate. De ce? În cazul în care oamenii se reunesc în mulțimi, este mai probabil să intrați în contact strâns cu cineva care are COVID-19 și este mai dificil să mențineți distanța fizică de 1 metru. Evitați să atingeți ochii, nasul și gura. De ce? Mâinile ating multe suprafețe și pot ridica viruși. Odată contaminate, mâinile pot transfera virusul la ochi, nas sau gură. De acolo, virusul îți poate intra în corp și te poate infecta. Asigurați-vă că, și oamenii din jurul dvs., urmați o igienă respiratorie bună. Aceasta înseamnă să-ți acoperi gura și nasul cu cotul sau țesutul îndoit atunci când tușești sau stranți. Apoi aruncați imediat țesutul folosit și spălați-vă mâinile. De ce? Picăturile răspândesc virusul. Urmărind o igienă respiratorie bună, protejezi oamenii din jurul tău de viruși, cum ar fi răceala, gripa și COVID-19. Rămâi acasă și auto-izolează chiar și cu simptome minore, cum ar fi tuse, dureri de cap, febră ușoară, până când te recuperezi. Cereți-vă cineva să vă aducă provizii. Dacă trebuie să părăsiți casa, purtați o mască pentru a evita infectarea celorlalți. De ce? Evitarea contactului cu alții îi va proteja de eventuale COVID-19 și alte virusuri. Dacă aveți febră, tuse și dificultăți de respirație, solicitați asistență medicală, dar sună telefonic în avans dacă este posibil și urmați instrucțiunile autorității dumneavoastră locale de sănătate. De ce? Autoritățile naționale și locale vor avea cele mai actualizate informații despre situația din zona dvs. Apelarea în avans vă va permite furnizorului de servicii medicale să vă direcționeze rapid către unitatea de sănătate potrivită. Acest lucru vă va proteja și va ajuta la prevenirea răspândirii virusurilor și a altor infecții. Fiți la curent cu cele mai recente informații din surse de încredere, cum ar fi OMS sau autoritățile de sănătate locale și naționale. De ce? Autoritățile locale și naționale sunt cele mai în măsură să consilieze ce ar trebui să facă oamenii din zona dvs. pentru a se proteja."

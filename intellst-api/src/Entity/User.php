@@ -41,8 +41,8 @@ class User implements UserInterface
     private string $password;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Enterprise::class, inversedBy="users")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\ManyToOne(targetEntity=Enterprise::class)
+     * @ORM\JoinColumn(name="enterprise_id", referencedColumnName="id", nullable=false)
      */
     private $enterprise;
 
@@ -114,14 +114,17 @@ class User implements UserInterface
 
         return $this;
     }
+
     public function getUsername()
     {
         // TODO: Implement getUsername() method.
     }
+
     public function getSalt()
     {
         return null;
     }
+
     public function getRoles(): array
     {
         return ['ROLE_USER'];
