@@ -1,6 +1,11 @@
 <template>
   <v-row>
-    <v-col cols="1" sm="3" v-for="(post, index) in casesData" :key="index">
+    <v-col
+      cols="1"
+      sm="3"
+      v-for="(post, index) in casesDataByWeek"
+      :key="index"
+    >
       <v-img
         @click="
           setDescription(post);
@@ -63,6 +68,7 @@
 
 <script>
 import { mapState, mapActions } from "vuex";
+import moment from "moment";
 
 export default {
   data() {
@@ -74,24 +80,40 @@ export default {
       currentDate: null,
     };
   },
-  mounted() {
-    this.identifiedCases();
+  props: {
+    currentWeekDate: {
+      type: String,
+      default: moment().format("MM/DD/YYYY"),
+    },
   },
+
   methods: {
-    ...mapActions("login", ["identifiedCases"]),
     setDescription(item) {
       this.currentId = item.id;
       this.currentTemperature = item.temperature;
-      this.currentPhoto = item.datePhoto.date.substring(0, 19);
-      this.currentDate = item.firstDate.date.substring(0, 19);
+      this.currentPhoto = moment(item.datePhoto.date).format(
+        "MM/DD/YYYY HH:MM"
+      );
+      this.currentDate = moment(item.firstDate.date).format("MM/DD/YYYY HH:MM");
     },
-    ...mapActions("login", ["allowEntrance"]),
     submit() {
       this.allowEntrance({ id: this.currentId });
+      setTimeout(() => {
+        this.dialog = false;
+      }, 700);
     },
+    ...mapActions("login", ["allowEntrance"]),
   },
   computed: {
     ...mapState("login", ["userToken", "casesData"]),
+    casesDataByWeek() {
+      const dateFilter = (value) =>
+        moment(value.firstDate.date).isSame(
+          moment(this.currentWeekDate, "MM/DD/YYYY"),
+          "day"
+        );
+      return Object.values(this.casesData).filter(dateFilter) || {};
+    },
   },
 };
 </script>

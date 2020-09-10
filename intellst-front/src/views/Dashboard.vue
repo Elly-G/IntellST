@@ -70,18 +70,9 @@ export default {
     home() {
       this.$router.push("/");
     },
-
     logout() {
       localStorage.removeItem("token");
       this.$router.push("/login");
-      //TODO call mutation with empty tokens
-      //TODO after it redirect it to auth page
-    },
-    open() {
-      console.log("open");
-      this.$refs.userForm.open();
-      // call mutation with empty tokens
-      // after it redirect it to auth page
     },
   },
 };

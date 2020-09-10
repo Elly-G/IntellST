@@ -68,8 +68,8 @@ export default {
   data: () => ({
     status: null,
     user: {
-      username: "admin@gmail.com",
-      password: "admin",
+      username: "",
+      password: "",
     },
     showPassword: false,
     rules: {

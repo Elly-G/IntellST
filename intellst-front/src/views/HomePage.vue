@@ -6,7 +6,8 @@
           <h1 style="text-align: center;">
             {{ $t("home.graph1") }} {{ $t("home.and") }} {{ $t("home.graph2") }}
           </h1>
-          <BarChart />
+
+          <bar-chart />
         </div>
       </v-col>
 
@@ -15,7 +16,8 @@
           <h1 style="text-align: center;">
             {{ $t("home.graph1") }} {{ $t("home.and") }} {{ $t("home.graph3") }}
           </h1>
-          <LineChart />
+
+          <line-chart />
         </div>
       </v-col>
     </v-row>
@@ -28,8 +30,8 @@ import LineChart from "../components/LineChart";
 
 export default {
   components: {
-    BarChart,
-    LineChart,
+    "bar-chart": BarChart,
+    "line-chart": LineChart,
   },
 };
 </script>

@@ -9,10 +9,10 @@
       <v-expansion-panels multiple focusable>
         <v-expansion-panel v-for="(item, i) in 5" :key="i">
           <v-expansion-panel-header>
-            {{ new Date() | moment("subtract", `${i} days`, "MM/DD/YYYY") }}
+            {{ formatDay(i) }}
           </v-expansion-panel-header>
           <v-expansion-panel-content>
-            <PersonPhoto />
+            <PersonPhoto :current-week-date="formatDay(i)" />
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
@@ -26,13 +26,10 @@
             <v-expansion-panels multiple focusable>
               <v-expansion-panel v-for="(item, i) in 5" :key="i">
                 <v-expansion-panel-header>
-                  {{
-                    new Date()
-                      | moment("subtract", `${i + 5} days`, "MM/DD/YYYY")
-                  }}
+                  {{ formatDay(i, 5) }}
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
-                  <PersonPhoto />
+                  <PersonPhoto :current-week-date="formatDay(i, 5)" />
                 </v-expansion-panel-content>
               </v-expansion-panel>
             </v-expansion-panels>
@@ -45,11 +42,24 @@
 
 <script>
 import PersonPhoto from "../components/PersonPhoto";
+import moment from "moment";
+import { mapActions } from "vuex";
 
 export default {
   name: "ConsultCases",
   components: {
     PersonPhoto,
+  },
+  mounted() {
+    this.identifiedCases();
+  },
+  methods: {
+    ...mapActions("login", ["identifiedCases"]),
+    formatDay(index, days = 0) {
+      return moment()
+        .subtract(index + days, "days")
+        .format("MM/DD/YYYY");
+    },
   },
 };
 </script>
