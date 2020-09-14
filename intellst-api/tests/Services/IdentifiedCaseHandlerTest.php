@@ -50,7 +50,6 @@ class IdentifiedCaseHandlerTest extends TestCase
         );
     }
 
-
     private function getIdentifiedCaseDTO(): IdentifiedCaseDTO
     {
         $dto = new IdentifiedCaseDTO();
@@ -59,14 +58,6 @@ class IdentifiedCaseHandlerTest extends TestCase
         $dto->temperature = 39;
         $dto->datePhoto = new DateTime('2020-01-01T15:03:01.012345Z');
         $dto->firstDate = new DateTime('2020-01-01T15:03:01.012345Z');
-
-        return $dto;
-    }
-
-    private function getAllowEntranceDTO(): AllowEntranceDTO
-    {
-        $dto = new AllowEntranceDTO();
-        $dto->allowEntrance = new DateTime();
 
         return $dto;
     }
@@ -103,7 +94,6 @@ class IdentifiedCaseHandlerTest extends TestCase
         $identifiedCase->setFirstDate(new DateTime());
 
         $handler = $this->getHandler();
-        $dto = $this->getAllowEntranceDTO();
 
         $result = $handler->updateIdentifiedCaseAllowEntrance($identifiedCase);
 
@@ -121,7 +111,7 @@ class IdentifiedCaseHandlerTest extends TestCase
 
         $identifiedCase2 = new IdentifiedCase();
         $identifiedCase2->setPhotoFilename('/home/images/');
-        $identifiedCase1->setUuid('jafasfrtetgrvgdg');
+        $identifiedCase2->setUuid('jafasfrtetgrvgdg');
         $identifiedCase2->setTemperature(39);
         $identifiedCase2->setFirstDate(new DateTime('2020-01-01T15:03:01.012345Z'));
         $identifiedCase2->setDatePhoto(new DateTime('2020-01-01T15:03:01.012345Z'));
