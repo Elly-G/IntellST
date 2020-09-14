@@ -51,8 +51,8 @@ class EnterpriseHandlerTest extends TestCase
         $handler = $this->getHandler();
         $dto = $this->getEnterpriseDTO();
         $dto->users = 1;
-
         $result = $handler->updateEnterprise($dto, $enterprise);
+
         $this->assertCount(0, $result);
     }
 
@@ -78,7 +78,7 @@ class EnterpriseHandlerTest extends TestCase
         $dto->users = 1;
         $dto->temperature = 32;
         $result = $handler->updateEnterprise($dto, $enterprise);
-//        var_dump($enterprise);
+
         $this->assertCount(2, $result);
         $this->assertEquals('temperature', $result->get(0)->getPropertyPath());
         $this->assertEquals('This value should be between 34 and 38.', $result->get(0)->getMessage());
@@ -95,7 +95,6 @@ class EnterpriseHandlerTest extends TestCase
         $dto = $this->getEnterpriseDTO();
         $dto->users = 1;
         $dto->temperature = 39;
-
         $result = $handler->updateEnterprise($dto, $enterprise);
 
         $this->assertCount(2, $result);
